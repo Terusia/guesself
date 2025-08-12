@@ -1,0 +1,337 @@
+@font-face {
+    font-family: "selfont";
+    src: url("Koblenz-Serial-Heavy.ttf");
+    
+}
+
+@font-face {
+    font-family: "otherfont";
+    src: url("texgyreadventor-regular.otf");
+    
+}
+
+@font-face {
+    font-family: "breakin";
+    src: url("Data\ 70\ Regular.otf");
+    
+}
+
+:root{
+    font-family: "selfont";
+    --backgroundcolor: black;
+    --backgroundimage: url(bd.png);
+    --headercolor: white;
+    --bordercolor: white;
+    --backgroundcolor2:black;
+
+
+    
+}
+
+html{
+    background-color: var(--backgroundcolor);
+    overflow-y: scroll;
+}
+
+
+
+body{
+    margin:0;
+}
+
+.whitetext{
+    color:var(--headercolor);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preheader{
+    background-image:var(--backgroundimage);
+    background-position: center top;
+    box-shadow: inset 0 0 10px 10px var(--backgroundcolor2);
+}
+
+.bigtext{
+    font-size: clamp(80px, 10vw, 20vw);
+}
+
+.border{
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--bordercolor);
+    margin:1vw;
+    border-radius: 50px
+ 
+}
+
+.misctext{
+    font-family: "otherfont";
+    color:white;
+    font-size: clamp(30px, 5vw, 40px);
+}
+
+.hovercolor:hover{
+    background-color: dimgrey;
+    transition: background-color 0.2s ease;
+}
+
+.hovercolor:not(:hover){
+    background-color: rgb(22, 22, 18);
+    transition: background-color 0.2s ease;
+}
+
+.enterbutt:not(:hover){
+    background-color: rgb(22, 22, 18);;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: border-top-left-radius 0.2s ease, border-top-right-radius 0.6s ease, border-bottom-left-radius 1s ease, border-bottom-right-radius 1.4s ease;
+
+}   
+
+.enterbutt:hover{
+    background-color: rgb(77, 77, 74);;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: border-top-left-radius 0.2s ease, border-top-right-radius 0.6s ease, border-bottom-left-radius 1s ease, border-bottom-right-radius 1.4s ease;
+    
+
+}   
+
+/*.striped {
+  background: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 10px,
+    #999999 10px,
+    #999999 20px
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200px 200px;
+  animation: moveStripes 4s linear infinite;
+  transition: background-color 1s;
+}
+
+@keyframes moveStripes {
+  from {
+    background-position: 0 0px;
+  }
+  to {
+    background-position: 0 200px;
+  }
+}
+*/
+
+.striped{
+    transform: scale(1);
+    animation: cool 1s ease infinite;
+}
+
+@keyframes cool {
+    0%{transform: rotateZ(0deg);}
+    25%{transform: rotateZ(6deg);}
+
+    75%{transform: rotateZ(-6deg);}
+    100%{transform: rotateZ(0deg);}
+}
+
+
+img{
+    user-select: none;
+}
+
+.headlightw{
+    filter: drop-shadow(0 0 20px white);
+    animation: whitea 2s ease infinite;
+    
+}
+
+.headlighty{
+    filter: drop-shadow(0 0 20px yellow) sepia(1) saturate(5) hue-rotate(20deg);
+    animation: yellowa 2s ease infinite;
+}
+
+.headlightr{
+    filter: sepia(1) saturate(5) hue-rotate(-20deg) drop-shadow(0 0 20px red) ;
+    animation: reda 2s ease infinite;
+}
+
+.headlightg{
+    filter: sepia(0.8) saturate(15) hue-rotate(100deg) brightness(1) drop-shadow(0 0 20px green) ;
+    animation: greena 2s ease infinite;
+}
+
+
+@keyframes whitea {
+    0%{filter: drop-shadow(0 0 20px white);}
+    50%{filter: drop-shadow(0 0 17px white);}
+    100%{filter: drop-shadow(0 0 20px white);}
+}
+
+@keyframes yellowa {
+    0%{filter: sepia(1) saturate(5) hue-rotate(20deg)drop-shadow(0 0 20px yellow);}
+    50%{filter: sepia(1) saturate(5) hue-rotate(20deg)drop-shadow(0 0 17px yellow);}
+    100%{filter: sepia(1) saturate(5) hue-rotate(20deg)drop-shadow(0 0 20px yellow);}
+}
+
+@keyframes reda {
+    0%{filter: sepia(1) saturate(5) hue-rotate(-20deg) drop-shadow(0 0 20px red);}
+    50%{filter: sepia(1) saturate(5) hue-rotate(-20deg) drop-shadow(0 0 17px red);}
+    100%{filter: sepia(1) saturate(5) hue-rotate(-20deg) drop-shadow(0 0 20px red);}
+}
+
+@keyframes greena {
+    0%{filter:sepia(0.8) saturate(15) hue-rotate(100deg) brightness(1) drop-shadow(0 0 20px green);}
+    50%{filter:sepia(0.8) saturate(15) hue-rotate(100deg) brightness(1) drop-shadow(0 0 17px green);}
+    100%{filter:sepia(0.8) saturate(15) hue-rotate(100deg) brightness(1) drop-shadow(0 0 20px green);}
+}
+
+.whiteborder{
+    border-color: white;border-style: solid;border-width: 2px;
+}
+.whiteborderinit{
+    border-color: white;border-style: solid;border-width: 0;border-bottom-width: 2px;
+}
+
+td > p{
+    font-size: 100%;
+}
+
+.whiteborderR{
+    border-color: white;border-style: solid;border-bottom-width:0px;;border-left-width:2px;;border-top-width:0px;border-right-width:0px;
+}
+
+.whiteborderL{
+    border-color: white;border-style: solid;border-bottom-width:2px;;border-right-width:2px;;border-top-width:2px;border-left-width:0px;
+}
+
+
+.up::after {
+    color: white;
+    position:absolute;
+    content: " \2191";
+    transform: translate(-50%,-60%);
+    right:5px;
+    top:50%
+}
+
+.down::after {
+    color: white;
+    position:absolute;
+    content: "↓";
+    transform: translate(-50%,-60%);
+    right:5px;
+    top:50%
+}
+
+
+
+
+
+
+@media (min-width:1000px) {
+
+        #tabletable{
+            width: 800px;
+        }
+
+        .rowrow{
+            width: 800px;
+        }
+
+        .songsong{
+            width:50%;         
+        }
+
+        .songalbum{
+            width:30px;         
+        }
+
+        .songtrack{
+            width:30px;         
+        }
+
+        .songlength{
+            width:10%;         
+        }
+
+        .songcontainer{
+            height: 95px;
+        }
+
+        
+    }
+
+@media (max-width:1000px) {
+
+        #tabletable{
+            width: 500px;
+        }
+
+        .rowrow{
+            width: 500px;
+        }
+
+        .songsong{
+            width:40%;         
+        }
+
+        .songalbum{
+            width:30%;         
+        }
+
+        .songtrack{
+            width:15%;         
+        }
+
+        .songlength{
+            width:15%;         
+        }
+
+        .songcontainer{
+            max-height: 95px;
+        }
+
+
+    }
+
+.shadow {
+    display: block;
+    box-shadow: inset 0 0 3px rgb(0, 0, 0)
+}
+
+.greencorrect{
+    background-color: green;
+    filter: drop-shadow(0 0 20px green);
+}
+
+.yellowcorrect{
+    background-color: rgb(188, 170, 2);
+    filter: drop-shadow(0 0 20px rgb(174, 156, 1));
+}
+/*
+.songalbum:not(.head)::after {
+    font-family: 'selfont', 'Segoe UI Symbol', 'Arial', sans-serif;
+    content: '↑';
+    color:white;
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    right:0px;
+
+}
+
+*/
+
+
+
