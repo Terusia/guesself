@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/ebbeb/OneDrive/Dokument/Songdle/main.html -->
+<html style="--backgroundcolor: black; --headercolor: white; --backgroundimage: url(bd.png); --backgroundcolor2: black; --bordercolor: black;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./main_files/style.css">
+        <script src="./main_files/script.js"></script><style type="text/css" id="operaUserStyle"></style>
+        
+    </head>
+
+    <body>
+        <div style="height: 100px;margin:0;" id="preheader"></div>
+        <header class="center" style="display:flex;position: relative;">
+            
+                <div id="test" class="border center" style="width: fit-content;height: fit-content; background-color: var(--backgroundcolor2);cursor: default;margin-left: 20px;margin-right: 20px; ">   
+                    <style>
+                        h1{
+                            margin-bottom: 0;
+                            user-select: none;
+                        }
+                    </style>
+                    <h1 class="whitetext bigtext " style="margin-top: 0;margin-left: 1vw;">G</h1>
+                    <h1 class="whitetext bigtext " style="margin-top: 0;margin-left: -0.5vw;user-select: none;">u</h1>
+                    <h1 class="whitetext bigtext " style="margin-top: 0;margin-left: -0.5vw;user-select: none;">e</h1>
+                    <h1 class="whitetext bigtext " style="margin-top: 0;margin-left: -0.5vw;user-select: none;">s</h1>
+                    <h1 class="whitetext bigtext " style="margin-top: 0;;user-select: none;">S</h1>
+                    <h1 class="whitetext bigtext " style="margin-top: 0;margin-left: -1vw;user-select: none;">e</h1>
+                    <h1 class="whitetext bigtext " style="margin-top: 0;margin-left: -0.8vw;user-select: none;">l</h1>
+                    <h1 class="whitetext bigtext " style="margin-top: 0;margin-left: -0.4vw;margin-right: 2vw;user-select: none;">f</h1>
+                </div>
+
+                
+
+                <div style="position: absolute;top: 10px;right: 5px;">
+                    <button style="visibility: hidden;cursor:pointer;;"><img src="./main_files/help_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="visibility: visible;width:clamp(35px, 3vw, 20vw);" title="Info"></button>
+                    <br>
+                    <button style="visibility: hidden;cursor:pointer;;"><img src="./main_files/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="visibility: visible;width:clamp(35px, 3vw, 20vw);" title="Info"></button>
+                </div>
+         
+        </header>
+
+        <table class="center " style="border-collapse: separate;border-spacing: 2vw 10px;margin-top: -20px;">
+                <tbody><tr id="lights">
+                    <td class="headlightcon" style="width:60px;height:60px;position: relative;"><img src="./main_files/headlight.png" alt="" style="width: clamp(30px,2vw,2vw);position:absolute;left:50%;transform: translate(-50%,-50%);" class="headlightr"></td>
+                    <td class="headlightcon" style="width:60px;height:60px;position: relative;"><img src="./main_files/headlight.png" alt="" style="width: clamp(30px,2vw,2vw);position:absolute;left:50%;transform: translate(-50%,-50%);" class="headlightr"></td>
+                    <td class="headlightcon" style="width:60px;height:60px;position: relative;"><img src="./main_files/headlight.png" alt="" style="width: clamp(30px,2vw,2vw);position:absolute;left:50%;transform: translate(-50%,-50%);" class="headlightr"></td>
+                    <td class="headlightcon" style="width:60px;height:60px;position: relative;"><img src="./main_files/headlight.png" alt="" style="width: clamp(30px,2vw,2vw);position:absolute;left:50%;transform: translate(-50%,-50%);" class="headlighty"></td>
+                    <td class="headlightcon" style="width:60px;height:60px;position: relative;"><img src="./main_files/headlight.png" alt="" style="width: clamp(30px,2vw,2vw);position:absolute;left:50%;transform: translate(-50%,-50%);" class="headlightw"></td>
+                    <td class="headlightcon" style="width:60px;height:60px;position: relative;"><img src="./main_files/headlight.png" alt="" style="width: clamp(30px,2vw,2vw);position:absolute;left:50%;transform: translate(-50%,-50%);" class="headlightw"></td>
+                    <td class="headlightcon" style="width:60px;height:60px;position: relative;"><img src="./main_files/headlight.png" alt="" style="width: clamp(30px,2vw,2vw);position:absolute;left:50%;transform: translate(-50%,-50%);" class="headlightw"></td>
+                    <td class="headlightcon" style="width:60px;height:60px;position: relative;"><img src="./main_files/headlight.png" alt="" style="width: clamp(30px,2vw,2vw);position:absolute;left:50%;transform: translate(-50%,-50%);" class="headlightw"></td>
+
+                </tr>
+        </tbody></table>
+
+        <template id="sugg"></template>
+
+        <div class="center" style="text-align: center;">
+            <p class="misctext">Start by guessing any Self song!</p>
+            
+        </div>
+
+        <div class="center">
+            <input id="input" type="text" style="font-size: 30px;padding: 5px;font-family: &#39;otherfont&#39;;">
+            
+        </div>
+        <div style="position:absolute;left:50%;transform: translate(-50%);z-index: 300;">
+            <div id="lsit" class="center" style="flex-direction: column;"></div>
+        </div>
+        
+        <div style="position: absolute;left:50%;transform: translate(-50%);">
+            <div class="center" style="margin-top: 30px;">
+                <div class="center enterbutt" style="width: 100px;height: 50px;font-size: larger;font-family: &#39;otherfont&#39;;text-align: center;align-items: center;cursor: pointer;user-select: none;" id="enterbutt"><p style="color: white;">Guess</p></div>
+            </div>
+        </div>
+
+        <div style="display:flex; justify-content: center;margin-bottom: 200px;">
+            <table style="padding-top: 100px; font-family: &#39;otherfont&#39;; color: white; table-layout: fixed;" id="tabletable">
+                <style>
+                    th {
+                        border-style: solid;
+                        border-color: white;
+                        border-width: 0px 0px 2px 0px;
+                        text-align: left;
+                        padding: 8px;
+
+                        
+                    }
+
+                    .songcontainer > td{
+                        border-style: solid;
+                        border-color: white;
+                        border-width: 1px ;
+                        text-align: left;
+                        padding: 8px;
+                    }
+                </style>
+
+                <thead>
+                    <tr>
+                        <th class="songsong head">Song</th>
+                        <th class="songalbum head">Album</th>
+                        <th class="songtrack head">Track #</th>
+                        <th class="songlength head">Length</th>
+                    </tr>
+                </thead>
+
+                <tbody id="wheredeygo">
+                    <template id="guessedsong"></template>
+                
+                        <tr class="songcontainer">
+                            <td class="songsong">Lucid Anne</td>
+                            <td class="songalbum up" style="padding:0px;height: 95px;position: relative;"><img src="./main_files/0.webp" style="width: 95px;height: 95px;display: block;"></td>
+                            <td class="songtrack up" style="position: relative;">13</td>
+                            <td class="songlength up" style="position: relative;">10:11</td>
+                        </tr>
+                    
+                        <tr class="songcontainer">
+                            <td class="songsong">5 Alive</td>
+                            <td class="songalbum up" style="padding:0px;height: 95px;position: relative;"><img src="./main_files/4.webp" style="width: 95px;height: 95px;display: block;"></td>
+                            <td class="songtrack up" style="position: relative;">13</td>
+                            <td class="songlength up" style="position: relative;">10:11</td>
+                        </tr>
+                    
+                        <tr class="songcontainer">
+                            <td class="songsong">Sophomore Jinx</td>
+                            <td class="songalbum up" style="padding:0px;height: 95px;position: relative;"><img src="./main_files/0.webp" style="width: 95px;height: 95px;display: block;"></td>
+                            <td class="songtrack up" style="position: relative;">13</td>
+                            <td class="songlength up" style="position: relative;">10:11</td>
+                        </tr>
+                    
+                        <tr class="songcontainer">
+                            <td class="songsong">Sophomore Jinx</td>
+                            <td class="songalbum up" style="padding:0px;height: 95px;position: relative;"><img src="./main_files/0.webp" style="width: 95px;height: 95px;display: block;"></td>
+                            <td class="songtrack up" style="position: relative;">13</td>
+                            <td class="songlength up" style="position: relative;">10:11</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+
+
+
+        
+
+        <footer style="position: fixed; bottom: 0;display: flex; align-items: center;background-color: black;width: 100vw;box-shadow: 0px -20px 20px black;">
+            <p class="whitetext" style="margin-left: 15px;font-family: &#39;otherfont&#39;;">Made by terusiadev</p>
+            <p class="whitetext" style="margin-left: 15px;font-family: &#39;otherfont&#39;;">Inspired by <a href="https://yeezle.xyz/" style="color: white;"><u>Yeezle</u></a></p>
+            <p class="whitetext" style="margin-left: 15px;font-family: &#39;otherfont&#39;;">...In turn inspired by <a href="https://poeltl.nbpa.com/" style="color: white;"><u>Poeltl</u></a></p>
+        </footer>
+        
+    
+</body></html>
